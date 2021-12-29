@@ -1,9 +1,9 @@
 /* NOTION CSS OVERRIDE */
 
-.notion {
+/* .notion {
   @apply text-gray-600 dark:text-gray-300;
   overflow-wrap: break-word;
-}
+} */
 .notion,
 .notion-text,
 .notion-quote,
@@ -39,9 +39,9 @@ svg + .notion-page-title-text {
   @apply text-gray-600 dark:text-gray-300;
 }
 
-.notion-code > code {
+/* .notion-code > code {
   @apply text-gray-900;
-}
+} */
 
 pre[class*='language-'] {
   line-height: inherit;
@@ -65,7 +65,9 @@ pre[class*='language-'] {
   @apply px-0;
 }
 .notion-quote {
-  padding: 0.2em 0.9em;
+  @apply text-base;
+  @apply text-gray-500;
+  padding: 0.1em 0.9em;
 }
 .notion-collection {
   @apply max-w-full;
