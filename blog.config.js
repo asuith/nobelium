@@ -2,8 +2,8 @@ const BLOG = {
   title: 'Yet Another Suith\'s Blog',
   author: 'A. Suith',
   email: 'suith27@gmail.com',
-  link: 'https://nobelium-asuith.vercel.app',
-  description: 'life is short and log it.',
+  link: 'https://blog.asuith.com',
+  description: 'life is short and keep a log.',
   lang: 'zh-CN', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   appearance: 'auto', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
@@ -16,15 +16,15 @@ const BLOG = {
   showAbout: true,
   showArchive: true,
   showSearch: false,
-  autoCollapsedNavBar: true, // The automatically collapsed navigation bar
+  autoCollapsedNavBar: false, // The automatically collapsed navigation bar
   ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
   socialLink: '',
   seo: {
     keywords: ['Blog', 'Website', 'Notion'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
   },
+  notionPageId: "d9cf73f3b50f4721a6f19d16f6f7df54", // DO NOT CHANGE THIS！！！
   // notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS！！！
-  notionPageId: 'd9cf73f3b50f4721a6f19d16f6f7df54', // DO NOT CHANGE THIS！！！
   notionAccessToken: process.env.NOTION_ACCESS_TOKEN, // Useful if you prefer not to make your database public
   analytics: {
     provider: '', // Currently we support Google Analytics and Ackee, please fill with 'ga' or 'ackee', leave it empty to disable it.
@@ -49,7 +49,7 @@ const BLOG = {
       distractionFreeMode: false
     },
     utterancesConfig: {
-      repo: 'https://github.com/asuith/nobelium'
+      repo: 'asuith/nobelium'
     },
     cusdisConfig: {
       appId: '', // data-app-id
