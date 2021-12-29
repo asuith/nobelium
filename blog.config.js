@@ -13,9 +13,10 @@ const BLOG = {
   since: '', // If leave this empty, current year will be used.
   postsPerPage: 1000,
   sortByDate: true,
-  showAbout: false,
+  showAbout: true,
   showArchive: true,
-  autoCollapsedNavBar: false, // The automatically collapsed navigation bar
+  showSearch: false,
+  autoCollapsedNavBar: true, // The automatically collapsed navigation bar
   ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
   socialLink: '',
   seo: {
@@ -38,7 +39,7 @@ const BLOG = {
   },
   comment: {
     // support provider: gitalk, utterances, cusdis
-    provider: '', // leave it empty if you don't need any comment plugin
+    provider: 'utterances', // leave it empty if you don't need any comment plugin
     gitalkConfig: {
       repo: '', // The repository of store comments
       owner: '',
@@ -48,7 +49,7 @@ const BLOG = {
       distractionFreeMode: false
     },
     utterancesConfig: {
-      repo: ''
+      repo: 'https://github.com/asuith/nobelium'
     },
     cusdisConfig: {
       appId: '', // data-app-id
