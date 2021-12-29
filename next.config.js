@@ -1,4 +1,5 @@
 module.exports = {
+  staticPageGenerationTimeout: 120,
   webpack5: true,
   images: {
     domains: ['gravatar.com']
